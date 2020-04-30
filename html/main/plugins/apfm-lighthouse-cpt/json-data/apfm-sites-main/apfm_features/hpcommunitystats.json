@@ -1,0 +1,19 @@
+{
+    "post_type": "apfm_features",
+    "title": "HpCommunityStats",
+    "slug": "hpcommunitystats",
+    "last_modified": "2020-03-31 17:24:02",
+    "status": "publish",
+    "taxonomies": [
+        {
+            "slug": "feature_type",
+            "terms": [
+                {
+                    "name": "STATS",
+                    "slug": "stats",
+                    "parent": 0
+                }
+            ]
+        }
+    ]
+}

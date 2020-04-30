@@ -1,0 +1,41 @@
+{
+  "name": "apfm-plugin-optimization",
+  "author": "GGarcia - APFM WP Team",
+  "version": "1.0.0",
+  "license": "GPL-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/aplaceformom/"
+  },
+  "dependencies": {
+    "browserslist": "^4.7.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-copy": "^4.0.1",
+    "gulp-filter": "^6.0.0",
+    "gulp-imagemin": "^6.1.0",
+    "gulp-line-ending-corrector": "^1.0.3",
+    "gulp-merge-media-queries": "^0.2.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sort": "^2.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-terser": "^1.2.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglifycss": "^1.1.0",
+    "gulp-wp-pot": "^2.3.5"
+  },
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "description": "Plugin Optimization",
+  "homepage": "https://bitbucket.org/aplaceformom/"
+}

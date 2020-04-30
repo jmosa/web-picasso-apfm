@@ -1,0 +1,19 @@
+{
+    "post_type": "apfm_features",
+    "title": "Hp Hero Feature",
+    "slug": "hp-hero-feature",
+    "last_modified": "2020-04-30 13:41:47",
+    "status": "publish",
+    "taxonomies": [
+        {
+            "slug": "feature_type",
+            "terms": [
+                {
+                    "name": "HERO",
+                    "slug": "hero",
+                    "parent": 0
+                }
+            ]
+        }
+    ]
+}

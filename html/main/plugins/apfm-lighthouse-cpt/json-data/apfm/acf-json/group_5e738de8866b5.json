@@ -1,0 +1,238 @@
+{
+    "key": "group_5e738de8866b5",
+    "title": "LeadForm:ThankYouContent",
+    "fields": [
+        {
+            "key": "field_5e738de88d810",
+            "label": "Title",
+            "name": "thankYouTitle",
+            "type": "text",
+            "instructions": "Heading text for the thank you page, e.g. \"Thanks, <b>{{ userFirstName }}<\/b>!\"",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "Thanks, <b>{{ userFirstName }}<\/b>!",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e741a6acc1eb",
+            "label": "Title (returning user)",
+            "name": "thankYouTitleReturningUser",
+            "type": "text",
+            "instructions": "Heading text for the thank you page (for users who have already submitted a form and return to the page), e.g. \"Welcome back, <b>{{ userFirstName }}<\/b>!\"",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "Welcome back, <b>{{ userFirstName }}<\/b>!",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e738de88d8ec",
+            "label": "Description",
+            "name": "thankYouDescription",
+            "type": "textarea",
+            "instructions": "Paragraph text for the thank you \/ returning user page, e.g. \"We are putting you in touch with an experienced local senior living andvisor that has helped many families. The number may display as unknown on your caller id, so be sure to pick up.\"",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "We are putting you in touch with an experienced local senior living andvisor that has helped many families. The number may display as unknown on your caller id, so be sure to pick up.",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_5e738f4a17f7e",
+            "label": "Image",
+            "name": "thankYouImage",
+            "type": "image",
+            "instructions": "Upload a thumbnail image for the thank you \/ returning user page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5e738f6a17f7f",
+            "label": "Profile Title",
+            "name": "thankYouProfileTitle",
+            "type": "text",
+            "instructions": "Caption (first line) for the thumbnail image on the thank you \/ returning user page, e.g. \"A Place For Mom\"",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "A Place For Mom",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e73904317f80",
+            "label": "Profile Subtitle",
+            "name": "thankYouProfileSubtitle",
+            "type": "text",
+            "instructions": "Caption (second line) for the thumbnail image on the thank you \/ returning user page, e.g. \"Local Advisor\"",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e738f6a17f7f",
+                        "operator": "!=empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "Local Advisor",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e73909c5a5bb",
+            "label": "Disclaimer",
+            "name": "thankYouDisclaimer",
+            "type": "text",
+            "instructions": "Paragraph text between form fields and CTA button, e.g. \"To speak with us now, please call {{ globalSitePhone }} or view care options near {{ userLocationZip }} while you wait.\"",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "To speak with us now, please call {{ globalSitePhone }} or view care options near {{ userLocationZip }} while you wait.",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e73a1ac5de46",
+            "label": "Form Note",
+            "name": "thankYouFormNote",
+            "type": "text",
+            "instructions": "Brief text above display of the form data submitted by user, e.g. \"Here's the information we have for you.\"",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "Here's the information we have for you.",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e7391d8d88b1",
+            "label": "CTA Link Title",
+            "name": "thankYouCtaLinkTitle",
+            "type": "text",
+            "instructions": "Button text for CTA button at bottom of thank you \/ returning user page, e.g. \"View Care Options\"",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "View Care Options",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e73968cd88b2",
+            "label": "CTA Link URL",
+            "name": "thankYouCtaLinkUrl",
+            "type": "text",
+            "instructions": "URL for CTA link at bottom of thank you \/ returning user page, e.g. \"https:\/\/www.aplaceformom.com\/{{ UrlSlug }}\/{{ userDesiredLocationState }}\/{{ userDesiredLocationCity }}\"",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "https:\/\/www.aplaceformom.com\/{{ UrlSlug }}\/{{ userDesiredLocationState }}\/{{ userDesiredLocationCity }}",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "lead_form"
+            }
+        ]
+    ],
+    "menu_order": 4,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "show_in_graphql": 1,
+    "graphql_field_name": "leadFormThankYouContent",
+    "modified": 1588116091
+}

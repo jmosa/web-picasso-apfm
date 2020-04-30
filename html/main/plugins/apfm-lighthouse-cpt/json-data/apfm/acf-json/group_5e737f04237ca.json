@@ -1,0 +1,236 @@
+{
+    "key": "group_5e737f04237ca",
+    "title": "LeadForm:FormBlock",
+    "fields": [
+        {
+            "key": "field_5e73d81cfb2b2",
+            "label": "Heading",
+            "name": "leadFormHeading",
+            "type": "text",
+            "instructions": "Heading text for the form, e.g. \"Hello! A Place for Mom is ready to help.\"",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "Hello! A Place for Mom is ready to help.",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e73d851fb2b3",
+            "label": "Description",
+            "name": "leadFormDescription",
+            "type": "textarea",
+            "instructions": "Paragraph text for the form, e.g. \"Before we get started please complete the form below so we know how to contact you.\"",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "Before we get started please complete the form below so we know how to contact you.",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_5e737f0428eac",
+            "label": "Fields",
+            "name": "leadFormFields",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5e737f042a88c",
+                    "label": "Label",
+                    "name": "leadFormFieldLabel",
+                    "type": "text",
+                    "instructions": "Label for the field, e.g. \"Email address\"",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_in_graphql": 1,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5e738174228c6",
+                    "label": "Name",
+                    "name": "leadFormFieldName",
+                    "type": "text",
+                    "instructions": "Identifier for the field; usually like Label but in camel case without spaces, e.g. \"emailAddress\"",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_in_graphql": 1,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5e737f043638d",
+                    "label": "Input Type",
+                    "name": "leadFormFieldInputType",
+                    "type": "select",
+                    "instructions": "Type of input (determines validation behavior), e.g. \"email\"",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_in_graphql": 1,
+                    "choices": {
+                        "text": "text",
+                        "tel": "tel",
+                        "email": "email",
+                        "hidden": "hidden"
+                    },
+                    "default_value": [],
+                    "allow_null": 1,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_5e7381cc228c7",
+                    "label": "Placeholder",
+                    "name": "leadFormFieldPlaceholder",
+                    "type": "text",
+                    "instructions": "Placeholder text for the input field, e.g. \"yourname@gmail.com\"",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_in_graphql": 1,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5e738416228ca",
+            "label": "Disclaimer \/ Legal Text",
+            "name": "leadFormDisclaimer",
+            "type": "wysiwyg",
+            "instructions": "Paragraph text between form fields and submit button \u2013\u00a0legal\/TCPA disclaimer text.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "By clicking {{ buttonText }}, you agree to our <a href=\"\/terms-of-use\">Terms of Use<\/a> and our <a href=\"\/privacy\">Privacy Policy<\/a>. You also consent that we, or our partner providers, may reach out to you using a system that can auto-dial; however, you do not need to consent to this to use our service.",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 1,
+            "delay": 1
+        },
+        {
+            "key": "field_5e7384e3228cc",
+            "label": "Button Text",
+            "name": "leadFormButtonText",
+            "type": "text",
+            "instructions": "Text for form submit button, e.g. \"View Care Options\"",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "View Care Options",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e738472228cb",
+            "label": "Button Link",
+            "name": "leadFormButtonLink",
+            "type": "text",
+            "instructions": "Optional custom URL to redirect after form submission, e.g. \"\/thank-you\"",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "lead_form"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "show_in_graphql": 1,
+    "graphql_field_name": "leadFormContent",
+    "modified": 1588116091
+}

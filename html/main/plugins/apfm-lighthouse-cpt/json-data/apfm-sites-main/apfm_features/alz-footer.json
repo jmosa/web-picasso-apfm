@@ -1,0 +1,19 @@
+{
+    "post_type": "apfm_features",
+    "title": "ALZ-Footer",
+    "slug": "alz-footer",
+    "last_modified": "2020-04-22 16:29:57",
+    "status": "publish",
+    "taxonomies": [
+        {
+            "slug": "feature_type",
+            "terms": [
+                {
+                    "name": "FOOTER",
+                    "slug": "footer",
+                    "parent": 0
+                }
+            ]
+        }
+    ]
+}

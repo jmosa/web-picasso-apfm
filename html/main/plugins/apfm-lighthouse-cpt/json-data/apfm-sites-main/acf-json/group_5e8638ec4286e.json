@@ -1,0 +1,159 @@
+{
+    "key": "group_5e8638ec4286e",
+    "title": "Footer:Links",
+    "fields": [
+        {
+            "key": "field_5e8638faa730b",
+            "label": "Links Columns",
+            "name": "footerLinksColumns",
+            "type": "repeater",
+            "instructions": "Click \"Add Column\" to add columns of grouped links to the footer.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Column",
+            "sub_fields": [
+                {
+                    "key": "field_5e863911a730c",
+                    "label": "Column Heading",
+                    "name": "columnHeading",
+                    "type": "text",
+                    "instructions": "Heading for the column of links, e.g. \"Who we are\"",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_in_graphql": 1,
+                    "default_value": "",
+                    "placeholder": "Heading",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5e863a09a730d",
+                    "label": "Column Link Group",
+                    "name": "columnLinkGroup",
+                    "type": "repeater",
+                    "instructions": "Click \"Add Link Group\" to create groups of related links within this column. Each group under may be separated on the front end by a line or blank space.",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_in_graphql": 1,
+                    "collapsed": "",
+                    "min": 0,
+                    "max": 0,
+                    "layout": "table",
+                    "button_label": "Add Link Group",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e863d7e017a2",
+                            "label": "Links",
+                            "name": "linkGroupLinks",
+                            "type": "repeater",
+                            "instructions": "Click \"Add Link\" to create links in this group.",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "table",
+                            "button_label": "Add Link",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5e863dca017a3",
+                                    "label": "Link Text",
+                                    "name": "linkGroupLinkText",
+                                    "type": "text",
+                                    "instructions": "Anchor text, e.g. \"Our Mission\"",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "show_in_graphql": 1,
+                                    "default_value": "",
+                                    "placeholder": "Anchor Text",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5e863e62017a4",
+                                    "label": "Link Url",
+                                    "name": "linkGroupLinkUrl",
+                                    "type": "text",
+                                    "instructions": "Url, e.g. \"https:\/\/www.aplaceformom.com\/about\"",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "show_in_graphql": 1,
+                                    "default_value": "",
+                                    "placeholder": "Url",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post",
+                "operator": "==",
+                "value": "26"
+            }
+        ],
+        [
+            {
+                "param": "slug",
+                "operator": "==",
+                "value": "footer"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "show_in_graphql": 1,
+    "graphql_field_name": "footerLinksColumns",
+    "modified": 1588102407
+}

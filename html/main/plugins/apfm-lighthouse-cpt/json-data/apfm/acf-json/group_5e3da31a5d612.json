@@ -1,0 +1,88 @@
+{
+    "key": "group_5e3da31a5d612",
+    "title": "Article:Info",
+    "fields": [
+        {
+            "key": "field_5e3da32369b24",
+            "label": "Header",
+            "name": "header",
+            "type": "post_object",
+            "instructions": "Select the header you want to use from this feature list.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "post_type": [
+                "apfm_features"
+            ],
+            "taxonomy": [
+                "feature_type:header"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
+        },
+        {
+            "key": "field_5e3da38769b27",
+            "label": "Footer",
+            "name": "footer",
+            "type": "post_object",
+            "instructions": "Select the footer you want to use from this feature list.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "post_type": [
+                "apfm_features"
+            ],
+            "taxonomy": [
+                "feature_type:footer"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "apfm_views"
+            },
+            {
+                "param": "post",
+                "operator": "==",
+                "value": "183"
+            }
+        ],
+        [
+            {
+                "param": "slug",
+                "operator": "==",
+                "value": "article-pillar"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "show_in_graphql": 1,
+    "graphql_field_name": "article_info",
+    "modified": 1588116109
+}

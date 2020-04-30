@@ -1,0 +1,19 @@
+{
+    "post_type": "apfm_features",
+    "title": "ALZ-Find Community CTA",
+    "slug": "alz-find-community-cta",
+    "last_modified": "2020-04-14 18:51:34",
+    "status": "publish",
+    "taxonomies": [
+        {
+            "slug": "feature_type",
+            "terms": [
+                {
+                    "name": "CTA",
+                    "slug": "cta",
+                    "parent": 0
+                }
+            ]
+        }
+    ]
+}

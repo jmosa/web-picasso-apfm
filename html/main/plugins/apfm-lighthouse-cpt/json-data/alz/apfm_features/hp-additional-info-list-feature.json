@@ -1,0 +1,19 @@
+{
+    "post_type": "apfm_features",
+    "title": "Hp Additional Info List Feature",
+    "slug": "hp-additional-info-list-feature",
+    "last_modified": "2020-04-30 13:40:39",
+    "status": "publish",
+    "taxonomies": [
+        {
+            "slug": "feature_type",
+            "terms": [
+                {
+                    "name": "LINKLIST",
+                    "slug": "linklist",
+                    "parent": 0
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+.env
+secrets
+.DS_Store
+db
+script.log
+html/main/debug.log
+html/main/uploads
+html/main/uploads/wp-migrate-db/*.sql
+

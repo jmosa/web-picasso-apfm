@@ -1,0 +1,19 @@
+{
+    "post_type": "apfm_features",
+    "title": "HpSteps",
+    "slug": "hpsteps",
+    "last_modified": "2020-04-08 19:48:57",
+    "status": "publish",
+    "taxonomies": [
+        {
+            "slug": "feature_type",
+            "terms": [
+                {
+                    "name": "STEPS",
+                    "slug": "steps",
+                    "parent": 0
+                }
+            ]
+        }
+    ]
+}

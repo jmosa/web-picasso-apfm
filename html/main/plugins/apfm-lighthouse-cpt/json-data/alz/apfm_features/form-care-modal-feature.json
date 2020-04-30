@@ -1,0 +1,19 @@
+{
+    "post_type": "apfm_features",
+    "title": "Form Care Modal Feature",
+    "slug": "form-care-modal-feature",
+    "last_modified": "2020-04-30 13:17:17",
+    "status": "publish",
+    "taxonomies": [
+        {
+            "slug": "feature_type",
+            "terms": [
+                {
+                    "name": "FORM",
+                    "slug": "form",
+                    "parent": 0
+                }
+            ]
+        }
+    ]
+}
