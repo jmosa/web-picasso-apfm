@@ -1,0 +1,19 @@
+{
+    "post_type": "apfm_features",
+    "title": "ALZ-HpCallOut",
+    "slug": "alz-hpcallout",
+    "last_modified": "2020-04-08 19:48:57",
+    "status": "publish",
+    "taxonomies": [
+        {
+            "slug": "feature_type",
+            "terms": [
+                {
+                    "name": "CALLOUTS",
+                    "slug": "callouts",
+                    "parent": 0
+                }
+            ]
+        }
+    ]
+}

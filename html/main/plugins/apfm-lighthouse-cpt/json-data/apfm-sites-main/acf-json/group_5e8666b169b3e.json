@@ -1,0 +1,73 @@
+{
+    "key": "group_5e8666b169b3e",
+    "title": "ALZ-HpCallOut:Info",
+    "fields": [
+        {
+            "key": "field_5e8666e3e064d",
+            "label": "Title",
+            "name": "title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "Your Alzheimer's Community",
+            "placeholder": "Your Alzheimer's Community",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e8666f9e064e",
+            "label": "Call Out Text",
+            "name": "call_out_text",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "new_lines": "",
+            "maxlength": "",
+            "placeholder": "",
+            "rows": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post",
+                "operator": "==",
+                "value": "88686"
+            }
+        ],
+        [
+            {
+                "param": "slug",
+                "operator": "==",
+                "value": "alz-hpcallout"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "show_in_graphql": 1,
+    "graphql_field_name": "alz_hpcallout",
+    "modified": 1588102407
+}

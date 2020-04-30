@@ -1,0 +1,38 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+#apfm-lighthouse-cpt-forms-settings .alert {
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+#apfm-lighthouse-cpt-forms-settings .alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+#apfm-lighthouse-cpt-forms-settings select.dev {
+    border-color: #ffba00;
+    background: #ffdf87;
+}
+#apfm-lighthouse-cpt-forms-settings select.prod {
+    border-color: #46b450;
+    background: #bef1c2;
+}
+
+#apfm-lighthouse-cpt-forms-settings tr.dev-control input {
+    border-color: #ffba00;
+    background: #ffdf87;
+}
+
+#apfm-lighthouse-cpt-forms-settings tr.prod-control input {
+    border-color: #46b450;
+    background: #bef1c2;
+}
+
+

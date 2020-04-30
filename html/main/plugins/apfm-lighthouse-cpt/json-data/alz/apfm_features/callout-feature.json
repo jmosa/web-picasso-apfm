@@ -1,0 +1,19 @@
+{
+    "post_type": "apfm_features",
+    "title": "Callout Feature",
+    "slug": "callout-feature",
+    "last_modified": "2020-04-30 13:42:07",
+    "status": "publish",
+    "taxonomies": [
+        {
+            "slug": "feature_type",
+            "terms": [
+                {
+                    "name": "CALLOUT",
+                    "slug": "callout",
+                    "parent": 0
+                }
+            ]
+        }
+    ]
+}

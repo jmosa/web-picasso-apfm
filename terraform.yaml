@@ -1,0 +1,19 @@
+app:
+    description: APFM Picasso CMS 
+    project: web
+    owner: Web
+    email: techops@aplaceformom.com
+    name: web-picasso
+    type: ecs
+config:
+  default:
+    cpu: 2048
+    memory: 8192
+    public: true
+    policies:
+      - ApfmS3ImageBucket
+    health_check:
+      path: /web-picasso-healthcheck.html
+      timeout: 30
+      interval: 300
+      grace_period: 300

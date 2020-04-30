@@ -1,0 +1,132 @@
+{
+    "key": "group_5e4b3819aeact",
+    "title": "Cta:Info",
+    "fields": [
+        {
+            "key": "field_5e4b382c3bbct",
+            "label": "Title",
+            "name": "title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "Help is a tap away. Call or chat now.",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e4b38333bbct",
+            "label": "Image",
+            "name": "image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5e4b384d3bbct",
+            "label": "Url",
+            "name": "url",
+            "type": "text",
+            "instructions": "Enter a url like https:\/\/www.aplaceformom.com or a partial path like \/privacy-policy. Leave this field blank if the cta opens a modal.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e4b386b3bbct",
+            "label": "Opens Modal",
+            "name": "opens_modal",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post",
+                "operator": "==",
+                "value": "88678"
+            }
+        ],
+        [
+            {
+                "param": "post",
+                "operator": "==",
+                "value": "88670"
+            }
+        ],
+        [
+            {
+                "param": "slug",
+                "operator": "==",
+                "value": "cta-inspirational-quotes-feature"
+            }
+        ],
+        [
+            {
+                "param": "slug",
+                "operator": "==",
+                "value": "cta-find-community-feature"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "show_in_graphql": 1,
+    "graphql_field_name": "Cta",
+    "modified": 1588266359
+}

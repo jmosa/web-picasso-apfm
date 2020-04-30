@@ -1,0 +1,283 @@
+{
+    "key": "group_5e86331d60b0b",
+    "title": "Footer:Info",
+    "fields": [
+        {
+            "key": "field_5e86333b0b3a5",
+            "label": "Newsletter Heading",
+            "name": "footerNewsletterHeading",
+            "type": "text",
+            "instructions": "Heading for newsletter signup column, e.g. \"Stay in touch\"",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "Stay in touch",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e86336a0b3a6",
+            "label": "Newsletter Description",
+            "name": "footerNewsletterDescription",
+            "type": "text",
+            "instructions": "Text displayed under the heading in the newsletter signup column, e.g. \"Get insights and articles in your inbox each month.\"",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "Get insights and articles in your inbox each month.",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e8636580b3a8",
+            "label": "Newsletter Input Text",
+            "name": "footerNewsletterInputText",
+            "type": "text",
+            "instructions": "Text for the newsletter signup input, e.g. \"Enter email to subscribe\"",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "Enter email to subscribe",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e86362d0b3a7",
+            "label": "Newsletter Button Text",
+            "name": "footerNewsletterButtonText",
+            "type": "text",
+            "instructions": "Text for the newsletter signup CTA button, e.g. \"Sign up now\"",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "Sign up now",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e8637530b3a9",
+            "label": "Contact Us Link",
+            "name": "footerContactUs",
+            "type": "group",
+            "instructions": "Anchor text and link to contact us page",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "layout": "table",
+            "sub_fields": [
+                {
+                    "key": "field_5e86378b0b3aa",
+                    "label": "Text",
+                    "name": "contactUsText",
+                    "type": "text",
+                    "instructions": "e.g. \"Contact Us\"",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_in_graphql": 1,
+                    "default_value": "",
+                    "placeholder": "Contact Us",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5e8637b30b3ab",
+                    "label": "Url",
+                    "name": "contactUsUrl",
+                    "type": "text",
+                    "instructions": "e.g. \"https:\/\/aplaceformom.com\/contact\"",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_in_graphql": 1,
+                    "default_value": "",
+                    "placeholder": "https:\/\/aplaceformom.com\/contact",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5e8637ea0b3ac",
+            "label": "Address",
+            "name": "footerAddress",
+            "type": "text",
+            "instructions": "Mailing address, e.g. \"701 5th Ave #3200, Seattle, WA 98104\"",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "701 5th Ave #3200, Seattle, WA 98104",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e86380f0b3ad",
+            "label": "Social Links",
+            "name": "footerSocialLinks",
+            "type": "repeater",
+            "instructions": "Click \"Add Social Link\" to add links to the company's profiles on social media \/ content sites, which will be rendered as icons on the front end.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add Social Link",
+            "sub_fields": [
+                {
+                    "key": "field_5e8644070c4cb",
+                    "label": "Site",
+                    "name": "socialLinkSite",
+                    "type": "select",
+                    "instructions": "Name of social\/content site e.g. \"Facebook\", \"Youtube\", etc.",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_in_graphql": 1,
+                    "choices": {
+                        "Facebook": "Facebook",
+                        "Twitter": "Twitter",
+                        "YouTube": "YouTube",
+                        "Pinterest": "Pinterest",
+                        "LinkedIn": "LinkedIn",
+                        "Instagram": "Instagram"
+                    },
+                    "default_value": [],
+                    "allow_null": 1,
+                    "multiple": 0,
+                    "ui": 1,
+                    "ajax": 0,
+                    "return_format": "value",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_5e8638980b3af",
+                    "label": "URL",
+                    "name": "socialLinkUrl",
+                    "type": "text",
+                    "instructions": "Url to profile\/channel page on social site e.g. \"https:\/\/www.facebook.com\/aplaceformom\", \"https:\/\/www.youtube.com\/channel\/UC63Y6jrxR2ztcW0-tMn12zg\", etc.",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_in_graphql": 1,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5e863c38a7d35",
+            "label": "Copyright Text",
+            "name": "footerCopyrightText",
+            "type": "wysiwyg",
+            "instructions": "Copyright\/legal text, e.g. \"Copyright &copy; {{ date.yyyy }} A Place for Mom, Inc. All Rights Reserved.\"",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post",
+                "operator": "==",
+                "value": "173"
+            }
+        ],
+        [
+            {
+                "param": "slug",
+                "operator": "==",
+                "value": "footer"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "show_in_graphql": 1,
+    "graphql_field_name": "footerNewsletter",
+    "modified": 1588116109
+}

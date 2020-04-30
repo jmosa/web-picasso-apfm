@@ -1,0 +1,19 @@
+{
+    "post_type": "apfm_features",
+    "title": "Seo Global Feature",
+    "slug": "seo-global-feature",
+    "last_modified": "2020-04-30 13:42:26",
+    "status": "publish",
+    "taxonomies": [
+        {
+            "slug": "feature_type",
+            "terms": [
+                {
+                    "name": "SEO",
+                    "slug": "seo",
+                    "parent": 0
+                }
+            ]
+        }
+    ]
+}

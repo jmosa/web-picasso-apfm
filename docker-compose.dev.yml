@@ -1,0 +1,35 @@
+version: '3.7'
+
+services:
+  picasso:
+    image: wordpress:5.3.2-php7.3
+    env_file: .env
+    working_dir: /var/www/html
+    environment:
+      - 'PICASSO_DB_NAME=picasso_wp_${APP_LOCATION}'
+      - 'PICASSO_DB_HOST=${PICASSO_DB_HOST}'
+      - 'PICASSO_DB_USER=${PICASSO_DB_USER}'
+      - 'PICASSO_DB_PASSWORD=${PICASSO_DB_PASSWORD}'
+    volumes:
+      - ./html:/var/www/html:cached
+    ports:
+      - '${LOCAL_PICASSO_PORT}:80'
+    depends_on:
+      - picasso-wp-db
+    networks:
+      - default
+      - lighthouse
+
+  picasso-wp-db:
+    image: mysql:5.7
+    env_file: .env
+    environment:
+      - 'MYSQL_DATABASE=picasso_wp_${APP_LOCATION}'
+      - 'MYSQL_USER=${PICASSO_DB_USER}'
+      - 'MYSQL_PASSWORD=${PICASSO_DB_PASSWORD}'
+      - 'MYSQL_RANDOM_ROOT_PASSWORD=1'
+
+networks:
+  lighthouse:
+    external:
+      name: apfm-lighthouse

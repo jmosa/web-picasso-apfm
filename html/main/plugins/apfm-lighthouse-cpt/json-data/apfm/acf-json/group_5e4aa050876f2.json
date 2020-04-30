@@ -1,0 +1,395 @@
+{
+    "key": "group_5e4aa050876f2",
+    "title": "HomePage:Info",
+    "fields": [
+        {
+            "key": "field_5e92236521e36",
+            "label": "TopBanner",
+            "name": "topbanner",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "post_type": [
+                "apfm_features"
+            ],
+            "taxonomy": [
+                "feature_type:banner"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
+        },
+        {
+            "key": "field_5e4aa0508f6ee",
+            "label": "Header",
+            "name": "header",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "post_type": [
+                "apfm_features"
+            ],
+            "taxonomy": [
+                "feature_type:header"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
+        },
+        {
+            "key": "field_5e4aa0508f733",
+            "label": "NoCostBanner",
+            "name": "nocostbanner",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "post_type": [
+                "apfm_features"
+            ],
+            "taxonomy": [
+                "feature_type:nocost"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
+        },
+        {
+            "key": "field_5e4aa0508f778",
+            "label": "HpHeroFeature",
+            "name": "hpherofeature",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "post_type": [
+                "apfm_features",
+                "apfm_article"
+            ],
+            "taxonomy": [
+                "feature_type:hero"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
+        },
+        {
+            "key": "field_5e4aa0508f7bb",
+            "label": "HpCertificateFeature",
+            "name": "hpcertificatefeature",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "post_type": [
+                "apfm_collections",
+                "apfm_features"
+            ],
+            "taxonomy": [
+                "feature_type:testimonials"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
+        },
+        {
+            "key": "field_5e4aa6aa81170",
+            "label": "HpUrgentFeature",
+            "name": "hpurgentfeature",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "post_type": [
+                "apfm_features",
+                "apfm_article"
+            ],
+            "taxonomy": [
+                "feature_type:cta"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
+        },
+        {
+            "key": "field_5e4aa70281171",
+            "label": "HpStepsCollection",
+            "name": "hpstepscollection",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "post_type": [
+                "apfm_collections",
+                "apfm_features"
+            ],
+            "taxonomy": [
+                "feature_type:steps"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
+        },
+        {
+            "key": "field_5e4aa73581172",
+            "label": "HpExpertStatsFeature",
+            "name": "hpexpertstatsfeature",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "post_type": [
+                "apfm_features",
+                "apfm_article"
+            ],
+            "taxonomy": [
+                "feature_type:stats"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
+        },
+        {
+            "key": "field_5e4aa78581173",
+            "label": "HpCommunityStatsFeature",
+            "name": "hpcommunitystatsfeature",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "post_type": [
+                "apfm_features",
+                "apfm_article"
+            ],
+            "taxonomy": [
+                "feature_type:stats"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
+        },
+        {
+            "key": "field_5e4aa7bd81174",
+            "label": "HpTestimonialsFeature",
+            "name": "hptestimonialsfeature",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "post_type": [
+                "apfm_collections",
+                "apfm_features"
+            ],
+            "taxonomy": [
+                "feature_type:testimonials"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
+        },
+        {
+            "key": "field_5e4aa80e81175",
+            "label": "HpCTAFeature",
+            "name": "hpctafeature",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "post_type": [
+                "apfm_features"
+            ],
+            "taxonomy": [
+                "feature_type:cta"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
+        },
+        {
+            "key": "field_5e4aa83281176",
+            "label": "GlobalCTAFeature",
+            "name": "globalctafeature",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "post_type": [
+                "apfm_features"
+            ],
+            "taxonomy": [
+                "feature_type:cta"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
+        },
+        {
+            "key": "field_5e4aa0508f806",
+            "label": "Footer",
+            "name": "footer",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "post_type": [
+                "apfm_features"
+            ],
+            "taxonomy": [
+                "feature_type:footer"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
+        },
+        {
+            "key": "field_5e5411485efcb",
+            "label": "SEO",
+            "name": "seo",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "post_type": [
+                "apfm_features"
+            ],
+            "taxonomy": [
+                "feature_type:seo"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "apfm_views"
+            },
+            {
+                "param": "post",
+                "operator": "==",
+                "value": "184"
+            }
+        ],
+        [
+            {
+                "param": "slug",
+                "operator": "==",
+                "value": "homepage"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "show_in_graphql": 1,
+    "graphql_field_name": "homepage",
+    "modified": 1588116110
+}

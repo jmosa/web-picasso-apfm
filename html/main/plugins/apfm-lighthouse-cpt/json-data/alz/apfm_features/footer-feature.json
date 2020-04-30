@@ -1,0 +1,19 @@
+{
+    "post_type": "apfm_features",
+    "title": "Footer Feature",
+    "slug": "footer-feature",
+    "last_modified": "2020-04-30 13:32:29",
+    "status": "publish",
+    "taxonomies": [
+        {
+            "slug": "feature_type",
+            "terms": [
+                {
+                    "name": "FOOTER",
+                    "slug": "footer",
+                    "parent": 0
+                }
+            ]
+        }
+    ]
+}

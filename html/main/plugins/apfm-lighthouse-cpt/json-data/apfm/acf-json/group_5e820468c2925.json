@@ -1,0 +1,133 @@
+{
+    "key": "group_5e820468c2925",
+    "title": "FormCTA:Info",
+    "fields": [
+        {
+            "key": "field_5e820628b07e4",
+            "label": "Heading",
+            "name": "formCtaHeading",
+            "type": "text",
+            "instructions": "Enter a heading to display above the location form CTA, e.g. \"Find {{title}} Services\"",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "Find {{title}} Services",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e820713b07e5",
+            "label": "Button Text",
+            "name": "formCtaBtnText",
+            "type": "text",
+            "instructions": "Enter text for the form submit button, e.g. \"Request Info\"",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "Request Info",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e82074ab07e6",
+            "label": "Error Message Text",
+            "name": "formCtaErrorMessage",
+            "type": "text",
+            "instructions": "Enter text to be displayed in case of an invalid input, e.g. \"Please enter a valid location\"",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "Please enter a valid location",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e82079bb07e7",
+            "label": "Label Text",
+            "name": "labelText",
+            "type": "text",
+            "instructions": "Enter text to display above the form field, e.g. \"City or postal code\" (leave blank by default)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e8207bab07e8",
+            "label": "Placeholder Text",
+            "name": "placeholderText",
+            "type": "text",
+            "instructions": "Enter text to display as a placeholder in the location field, e.g. \"City or postal code\"",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post",
+                "operator": "==",
+                "value": "174"
+            }
+        ],
+        [
+            {
+                "param": "slug",
+                "operator": "==",
+                "value": "formcta"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "show_in_graphql": 1,
+    "graphql_field_name": "formCta",
+    "modified": 1588116109
+}

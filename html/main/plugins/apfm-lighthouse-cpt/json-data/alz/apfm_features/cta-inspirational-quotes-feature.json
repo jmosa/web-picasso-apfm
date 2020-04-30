@@ -1,0 +1,19 @@
+{
+    "post_type": "apfm_features",
+    "title": "Cta Inspirational Quotes Feature",
+    "slug": "cta-inspirational-quotes-feature",
+    "last_modified": "2020-04-30 13:33:20",
+    "status": "publish",
+    "taxonomies": [
+        {
+            "slug": "feature_type",
+            "terms": [
+                {
+                    "name": "CTA",
+                    "slug": "cta",
+                    "parent": 0
+                }
+            ]
+        }
+    ]
+}

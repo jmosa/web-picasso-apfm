@@ -1,0 +1,71 @@
+{
+    "key": "group_5e3da3e2e9216",
+    "title": "Collection:RelatedArticles",
+    "fields": [
+        {
+            "key": "field_5e3da3f6043ed",
+            "label": "Related Articles",
+            "name": "relatedArticles",
+            "type": "repeater",
+            "instructions": "Select as many articles for this collection as you wish. Drag-and-drop to put them in the desired order. Click \"Add Article\" to add more to the list, or click the (-) minus icon to the right of any of them to remove it.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "row",
+            "button_label": "Add Article",
+            "sub_fields": [
+                {
+                    "key": "field_5e3da405043ee",
+                    "label": "Article Link",
+                    "name": "articleLink",
+                    "type": "post_object",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_in_graphql": 1,
+                    "post_type": [
+                        "apfm_article"
+                    ],
+                    "taxonomy": "",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "return_format": "object",
+                    "ui": 1
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "apfm_collections"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "show_in_graphql": 1,
+    "graphql_field_name": "relatedArticles",
+    "modified": 1588102407
+}

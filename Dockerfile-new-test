@@ -1,0 +1,48 @@
+# Update WordPress versions here
+# 5.4.0 – released 2020-03-31 - updated here 2020-04-30
+FROM wordpress:5.4.0-php7.3
+LABEL maintainer="wpdev@aplaceformom.com"
+
+# Set environment variables
+ARG environment=dev
+ENV environment ${environment}
+ARG wpversion=5.4
+ENV wpversion ${wpversion}
+
+# install the SSH key needed for access to private APFM repos
+# COPY apfmbitbucket_jmo /root/.ssh/id_rsa
+# COPY installdep /usr/local/bin/
+# RUN chmod 400 /root/.ssh/id_rsa && \
+# # git, tools and config
+#     apt-get update -qq && \
+#     apt-get install -qq -y -o=Dpkg::Use-Pty=0 git && \ 
+#     # echo "Host bitbucket.org" | tee ~/.ssh/config && \
+#     # echo "        StrictHostKeyChecking no" | tee -a ~/.ssh/config && \
+#     # /usr/local/bin/installdep -e ${environment} -p /var/www/html/ && \
+# 	mkdir /src && \
+# 	git clone -b 5.4.1 --depth 1 https://github.com/WordPress/WordPress /src/core
+# delete the SSH key
+    # rm ~/.ssh/id_rsa
+
+# Copy codebase
+WORKDIR /var/www/html
+ADD --chown=www-data:www-data ./html .
+VOLUME /var/www/html
+
+# Install WP core
+ADD --chown=www-data:www-data https://wordpress.org/wordpress-${wpversion}.tar.gz .
+RUN tar -xzvf wordpress-${wpversion}.tar.gz -C ./core && \
+  rm wordpress-${wpversion}.tar.gz
+
+# Install Composer and https://github.com/hirak/prestissimo
+# RUN curl -sS https://getcomposer.org/installer | php && mv composer.phar /usr/local/bin/composer && composer global require hirak/prestissimo --no-plugins --no-scripts
+
+# Install dependencies
+# COPY composer.json composer.json
+# RUN composer install --prefer-dist --no-scripts --no-dev --no-autoloader && rm -rf /root/.composer
+
+# Finish composer
+# RUN composer dump-autoload --no-scripts --no-dev --optimize
+
+EXPOSE 80
+

@@ -1,0 +1,19 @@
+{
+    "post_type": "apfm_features",
+    "title": "Header Feature",
+    "slug": "header-feature",
+    "last_modified": "2020-04-30 13:31:56",
+    "status": "publish",
+    "taxonomies": [
+        {
+            "slug": "feature_type",
+            "terms": [
+                {
+                    "name": "HEADER",
+                    "slug": "header",
+                    "parent": 0
+                }
+            ]
+        }
+    ]
+}

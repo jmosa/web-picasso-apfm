@@ -1,0 +1,32 @@
+name: Build Test
+
+on:
+  push:
+    branches: # run once when pushing a commit to any branch
+      - '**' # but don't run when pushing only tags to any branch, whether manually or as a release
+
+jobs:
+  build-test:
+    name: 'Build Test: Run Docker Build'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Set ci location
+        run: echo "::set-env name=APP_LOCATION::ci"
+
+      - name: Set dev location
+        if: github.ref == 'refs/heads/develop'
+        run: echo "::set-env name=APP_LOCATION::dev"
+
+      - name: Set stage location
+        if: github.ref == 'refs/heads/master'
+        run: echo "::set-env name=APP_LOCATION::stage"
+
+      - name: Set prod location
+        if: github.ref == 'refs/heads/release'
+        run: echo "::set-env name=APP_LOCATION::prod"
+
+      - name: Build test
+        run: set -xe; docker build . --build-arg environment=$APP_LOCATION

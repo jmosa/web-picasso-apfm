@@ -1,0 +1,19 @@
+{
+    "post_type": "apfm_features",
+    "title": "HpExpertStats",
+    "slug": "hpexpertstats",
+    "last_modified": "2020-04-08 19:48:57",
+    "status": "publish",
+    "taxonomies": [
+        {
+            "slug": "feature_type",
+            "terms": [
+                {
+                    "name": "STATS",
+                    "slug": "stats",
+                    "parent": 0
+                }
+            ]
+        }
+    ]
+}

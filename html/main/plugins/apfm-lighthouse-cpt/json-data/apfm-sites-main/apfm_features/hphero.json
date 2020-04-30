@@ -1,0 +1,19 @@
+{
+    "post_type": "apfm_features",
+    "title": "HpHero",
+    "slug": "hphero",
+    "last_modified": "2020-04-08 19:48:57",
+    "status": "publish",
+    "taxonomies": [
+        {
+            "slug": "feature_type",
+            "terms": [
+                {
+                    "name": "HERO",
+                    "slug": "hero",
+                    "parent": 0
+                }
+            ]
+        }
+    ]
+}

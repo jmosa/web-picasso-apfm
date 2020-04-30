@@ -1,0 +1,372 @@
+{
+    "key": "group_5e6a8cf128da7",
+    "title": "LeadForm:QuestionnaireSteps",
+    "fields": [
+        {
+            "key": "field_5e73cebc5503e",
+            "label": "Multiple Step Form?",
+            "name": "multipleStepForm",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "message": "Check this box to enable the \"Questions\" section to create a multiple-step questionnaire before the main lead form.",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5e6a8d73b2cdc",
+            "label": "Questionnaire Steps",
+            "name": "questionnaireSteps",
+            "type": "repeater",
+            "instructions": "Click \"Add Step\" to begin creating steps of a multiple-page questionnaire flow which the user will complete before seeing the lead form.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e73cebc5503e",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Step",
+            "sub_fields": [
+                {
+                    "key": "field_5e6a8d90b2cdd",
+                    "label": "Step Number",
+                    "name": "questionnaireStepNumber",
+                    "type": "number",
+                    "instructions": "Enter a unique <b>Step Number<\/b> to identify each step.",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_in_graphql": 1,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "min": "",
+                    "max": "",
+                    "step": ""
+                },
+                {
+                    "key": "field_5e6bc7c8c7fee",
+                    "label": "Top Text",
+                    "name": "questionnaireStepTopText",
+                    "type": "textarea",
+                    "instructions": "Add paragraph text to display above the primary Question Text, e.g. \"Hi! To get started please answer a few questions so we can find the best local advisor for you.\"",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_in_graphql": 1,
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 2,
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_5e6bc7a5c7fed",
+                    "label": "Step Type",
+                    "name": "questionnaireStepType",
+                    "type": "select",
+                    "instructions": "This should be \"Multiple Choice\" for most Steps, but you can select \"Location\" to create one Step with a zip code form instead of a list of questions.",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_in_graphql": 1,
+                    "choices": {
+                        "multipleChoice": "Multiple Choice",
+                        "locationForm": "Location Form"
+                    },
+                    "default_value": [
+                        "multipleChoice"
+                    ],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_5e6a8d9ab2cde",
+                    "label": "Question Text",
+                    "name": "questionnaireStepQuestionText",
+                    "type": "text",
+                    "instructions": "Enter a question or prompt for this form step, e.g. \"Who are you seeking care for?\"",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_in_graphql": 1,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5e836c296fb89",
+                    "label": "Question Name",
+                    "name": "questionnaireStepQuestionName",
+                    "type": "text",
+                    "instructions": "Variable name to be used for this question step in later question steps' answer messages, e.g. {{question1}}.",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5e6bc7a5c7fed",
+                                "operator": "==",
+                                "value": "multipleChoice"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_in_graphql": 1,
+                    "default_value": "",
+                    "placeholder": "question1",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5e6a8daab2cdf",
+                    "label": "Answers",
+                    "name": "questionnaireStepAnswers",
+                    "type": "repeater",
+                    "instructions": "Click \"Add Answer\" to add choices which the user can select for the question in this step.",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5e6bc7a5c7fed",
+                                "operator": "==",
+                                "value": "multipleChoice"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_in_graphql": 1,
+                    "collapsed": "",
+                    "min": 0,
+                    "max": 0,
+                    "layout": "block",
+                    "button_label": "Add Answer",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e6a8db9b2ce0",
+                            "label": "Answer Label",
+                            "name": "questionnaireStepAnswerLabel",
+                            "type": "text",
+                            "instructions": "Text to be printed in the button to select this answer, e.g. \"A parent\"",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "default_value": "",
+                            "placeholder": "A parent",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5e7c26e290fe8",
+                            "label": "Answer Tooltip",
+                            "name": "questionnaireStepAnswerTooltip",
+                            "type": "textarea",
+                            "instructions": "Tooltip text describing an answer in greater detail on hover, e.g. for an answer labelled \"Memory Care\" the tooltip might read \"Communities for residents suffering from Alzheimer's disease and other types of memory problems, usually providing 24-hr. supervised care.\"",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "default_value": "",
+                            "placeholder": "Communities for residents suffering from Alzheimer's disease and other types of memory problems, usually providing 24-hr. supervised care.",
+                            "maxlength": "",
+                            "rows": 2,
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_5e7559b1452ca",
+                            "label": "Answer Value",
+                            "name": "questionnaireStepAnswerValue",
+                            "type": "text",
+                            "instructions": "Usually very similar to Answer Label but perhaps with slightly different formatting, this is the value which will ultimately be sent with the lead submission, and which can be returned in place of the Answer Name variables within later Answer Messages. So an answer with Name {{question1}} might have Answer Label \"A Parent\" and Answer Value \"parent\".",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "default_value": "",
+                            "placeholder": "parent",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5e7559cb452cc",
+                            "label": "Answer Message",
+                            "name": "questionnaireStepAnswerMessage",
+                            "type": "textarea",
+                            "instructions": "A dynamic message to be shown after this question has been answered, taking into account this particular answer and optionally using variables populated by the answers a user has given to previous questions (represented by an Answer Name inside double curly braces). For example: \"Ok, you\u2019re looking for post hospital care for a {{question1}} in {{ locationForm }}.\"",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "default_value": "",
+                            "placeholder": "Ok, you\u2019re looking for post hospital care for a {{question1}} in {{ locationForm }}.",
+                            "maxlength": "",
+                            "rows": 2,
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_5e7559ba452cb",
+                            "label": "Answer Next Step",
+                            "name": "questionnaireStepAnswerNextStep",
+                            "type": "text",
+                            "instructions": "Enter the <b>Step Number<\/b> of the next Step which should be displayed if the user selects this Answer.",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5e98b16060704",
+                            "label": "URL Slug",
+                            "name": "url_slug",
+                            "type": "text",
+                            "instructions": "Used in the CTA Link URL of the thank you page to redirect to the correct \"View Care Options\" page, e.g. assisted-living or memory-care",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "default_value": "",
+                            "placeholder": "assisted-living",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ]
+                },
+                {
+                    "key": "field_5e9492feee465",
+                    "label": "Location Form Answer Message",
+                    "name": "questionnaireLocationFormAnswerMessage",
+                    "type": "textarea",
+                    "instructions": "A dynamic message to be shown after this question has been answered, optionally using a variable populated by the answer (inside double curly braces). For example: \"We're looking for an advisor in {{ zip }}.\"",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5e6bc7a5c7fed",
+                                "operator": "==",
+                                "value": "locationForm"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_in_graphql": 1,
+                    "default_value": "",
+                    "placeholder": "We're looking for an advisor in {{ zip }}.",
+                    "maxlength": "",
+                    "rows": 2,
+                    "new_lines": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "lead_form"
+            }
+        ]
+    ],
+    "menu_order": 2,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "show_in_graphql": 1,
+    "graphql_field_name": "leadFormQuestions",
+    "modified": 1588102408
+}

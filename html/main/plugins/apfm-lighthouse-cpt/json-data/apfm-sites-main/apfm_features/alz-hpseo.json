@@ -1,0 +1,19 @@
+{
+    "post_type": "apfm_features",
+    "title": "ALZ-HpSEO",
+    "slug": "alz-hpseo",
+    "last_modified": "2020-04-08 19:59:07",
+    "status": "publish",
+    "taxonomies": [
+        {
+            "slug": "feature_type",
+            "terms": [
+                {
+                    "name": "SEO",
+                    "slug": "seo",
+                    "parent": 0
+                }
+            ]
+        }
+    ]
+}
